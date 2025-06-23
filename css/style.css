@@ -178,7 +178,11 @@
 .icon-img2 {
   text-align: center;
 }
-
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card {
   width: 300px;
   border-radius: 10px;
@@ -200,24 +204,28 @@
 
 .card-content h3 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1 rem;
+  color: #555;
+  text-align: left;
 }
 
 .card-content p {
   font-size: 0.9rem;
-  color: #555;
-  margin: 5px;
+  color: #777777;
+  margin: 0px;
   text-align: left;
+  width: 100%;
 }
 
 .card-content button {
-  background-color: #007bff;
+  background-color: #f8b864;
   color: white;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   text-align: center;
+  margin-top: 10px;
 }
 .causes-meta {
   margin: 21px 0 16px;
@@ -229,7 +237,97 @@
 }
 .f-left {
   float: left;
+  font-weight: bold;
+  color: #777777;
 }
 .f-right {
   float: right;
+  font-weight: bold;
+  color: #777777;
+}
+.dollar-target span {
+  color: black;
+  font-size: 14px;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+
+.gallery-img {
+  padding: 5px;
+}
+
+.action-area {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background-color: #f8b864;
+  padding: 60px;
+}
+.action-text h2 {
+  float: left;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.action-button a {
+  float: right;
+  text-decoration: none;
+  color: #f8b864;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.action-button a:hover {
+  background-color: #f8b864;
+  color: #fff;
+}
+.team-area {
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-color: #f8f8f8;
+}
+.section-title > h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.section-title .section-2 {
+  color: #777777;
+  width: 100%;
+}
+
+.single-team {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.text-center h3 {
+  text-align: center !important;
+}
+.footer-area {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  background-color: #2e2e2e;
+}
+.widge-title {
+  color: #fff;
+}
+.footer-social ul li {
+  display: inline;
+}
+.footer-social ul li a {
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
 }
