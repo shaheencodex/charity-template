@@ -30,7 +30,7 @@
 }
 .top-header-left {
   float: left;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 .top-header-left ul {
@@ -51,10 +51,11 @@
 
 .top-header-right {
   float: right;
-  width: 60%;
+  width: 50%;
   text-align: right;
   padding-right: 100px;
 }
+
 .top-header-right ul {
   padding-left: 0;
 }
@@ -68,7 +69,7 @@
   font-size: 15px;
   font-weight: 500;
   color: white;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .bottom-header {
@@ -81,32 +82,41 @@
   float: left;
   width: 20%;
   text-align: left;
-  padding: 0px 10px;
+  padding: 10px;
 }
 .logo img {
   width: 100%;
+}
+.menu-icon {
+  float: right;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0px;
+  display: none;
+  color: white;
 }
 .nav-menu {
   float: right;
   width: 80%;
   text-align: center;
-  padding: 10px 0px;
+  padding: 40px;
 }
 
 .nav-menu ul {
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 .nav-menu ul li {
   display: inline-block;
   list-style-type: none;
+  padding-right: 0px;
 }
 .nav-menu ul li a {
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
   color: white;
-  padding: 0px 10px;
+  padding-right: 10px;
   text-transform: uppercase;
 }
 
@@ -138,14 +148,14 @@
 .slider-content p {
   color: #fff;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.5;
   margin: 0 auto;
   width: 100%;
 }
 .slider-content button {
   border-radius: 50px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 46px;
   padding: 14px 35px;
   text-transform: uppercase;
@@ -344,7 +354,7 @@
   color: #ccc;
   font-size: 15px;
   line-height: 1.6;
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 
@@ -404,4 +414,197 @@
   padding-top: 20px;
   font-size: 14px;
   color: #ccc;
+}
+
+@media only screen and (max-width: 767px) {
+  .top-header-left,
+  .top-header-right,
+  .logo,
+  .nav-menu,
+  .slider-content,
+  .card,
+  .action-text,
+  .action-button {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .top-header-left ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+  .logo img {
+    width: 40%;
+  }
+
+  .top-header-left ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 0px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 160px;
+  }
+  .sub-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .action-button a {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .slider-content {
+    width: 100%;
+    padding-top: 60px;
+    margin-top: 0px;
+    float: left;
+  }
+  .causes p {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    color: #777;
+    font-size: 18px;
+    margin: 26px auto;
+    width: 100% 419px;
+  }
+
+  .team-area,
+  .causes {
+    height: auto;
+  }
+
+  .gallery-img img {
+    width: 100%;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-header-left,
+  .top-header-right,
+  .slider-content,
+  .card,
+  .action-text,
+  .action-button,
+  .footer-column {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main {
+    height: 80vh;
+  }
+  .logo {
+    float: left;
+    width: 20%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .bottom-header .nav-menu {
+    float: right;
+    width: 80%;
+    padding: 25px;
+  }
+
+  .bottom-header .nav-menu ul li a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .slider-content {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 100px;
+    text-align: left;
+  }
+
+  .slider-content h2 {
+    font-size: 30px;
+  }
+
+  .slider-content h1 {
+    font-size: 42px;
+  }
+  .slider-content p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .card-row {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .action-area {
+    padding: 40px 20px;
+  }
+
+  .action-button a {
+    display: inline-block;
+    margin-top: 20px;
+    float: none;
+  }
+
+  .team-area {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer-column {
+    flex: 1 1 45%;
+    margin-bottom: 30px;
+  }
+
+  .gallery-img img {
+    width: 100%;
+  }
 }
